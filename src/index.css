@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+@layer base {
+  .kumbh400 {
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+    font-variation-settings: "YOPQ" 300;
+  }
+  
+  nav {
+    @apply border-Light-grayish-blue border-b-[0.2vw];
+  }
+  h1 {
+    @apply font-bold;
+  }
+  li {
+    @apply cursor-pointer font-medium text-Grayish-blue hover:text-Dark-grayish-blue relative inline-block after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-[2.7vw] after:h-[0.28vw] after:w-0 after:bg-Orange  
+    hover:after:w-full after:scale-x-0 
+    after:transition-transform after:duration-400 
+    after:origin-center hover:after:scale-x-100
+  }
+
+  @media (min-width: 855px) and (max-width: 2560px) {
+    .bigTxt {
+      font-size: calc(22px + (70 - 22) * ((100vw - 855px) / 1705));
+    }
+    .mediumbigTxt {
+      font-size: calc(10px + (58 - 10) * ((100vw - 855px) / 1705));
+    }
+    .mediumTxt {
+      font-size: calc(9px + (21 - 9) * ((100vw - 855px) / 1705));
+    }
+    .smallTxt {
+      font-size: calc(10px + (22 - 10) * ((100vw - 855px) / 1705));
+    }
+    .ultraTxt {
+      font-size: calc(9px + (21 - 9) * ((100vw - 855px) / 1705));
+    }
+    .ultrasmallTxt {
+      font-size: calc(8px + (20 - 8) * ((100vw - 855px) / 1705));
+    }
+    .ultrasmallerTxt {
+      font-size: calc(8px + (20 - 8) * ((100vw - 855px) / 1705));
+    }
+  }
+
+  @media (max-width: 854px) {
+    .bigTxt {
+      font-size: calc(3px + (58 - 3) * ((100vw - 0px) / 854));
+    }
+    .mediumbigTxt {
+      font-size: calc(2px + (64 - 2) * ((100vw - 0px) / 854));
+    }
+    .mediumTxt {
+      font-size: calc(1px + (35 - 1) * ((100vw - 0px) / 854));
+    }
+    .smallTxt {
+      font-size: calc(1px + (32 - 1) * ((100vw - 0px) / 854));
+    }
+    .ultraTxt {
+      font-size: calc(1px + (35 - 1) * ((100vw - 0px) / 854));
+    }
+    .ultrasmallTxt {
+      font-size: calc(1px + (24 - 1) * ((100vw - 0px) / 854));
+    }
+    .ultrasmallerTxt {
+      font-size: calc(0.5px + (19 - 0.5) * ((100vw - 0px) / 854));
+    }
+  }
+}
