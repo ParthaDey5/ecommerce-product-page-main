@@ -2,7 +2,8 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
 
-  darkMode: "media",
+  // darkMode: "media",
+  darkMode: "class",
 
   theme: {
     extend: {
@@ -20,6 +21,7 @@ module.exports = {
         "Light-grayish-blue": "hsl(223, 64%, 98%)",
         White: "hsl(0, 0%, 100%)",
         Black75: "hsl(0, 0%, 0%)", //(with 75% opacity for lightbox background)
+        
       },
       fontSize: {
         base: "16px",
@@ -34,11 +36,15 @@ module.exports = {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
-        "slideRight100": {
+        "fade-in-soft": {
+          "0%": { opacity: "0", transform: "translateY(-2%)" },
+          "100%":   { opacity: "1", transform: "translateY(0.1%)" }
+        },
+        slideRight100: {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
-        "slideLeft100": {
+        slideLeft100: {
           "0%": { transform: "translateX(0)", opacity: "1" },
           "100%": { transform: "translateX(-100%)", opacity: "1" },
         },
@@ -57,6 +63,7 @@ module.exports = {
         },
       },
       animation: {
+        "fade-in-soft": "fade-in-soft 1.5s ease-in-out",
         "pop-in": "pop-in 0.3s ease-out forwards",
         "bounce": "bounce 0.6s infinite alternate",
         "fade-in": "fade-in 1s ease forwards",

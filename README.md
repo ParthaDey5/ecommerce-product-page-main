@@ -1,16 +1,56 @@
-# React + Vite
+# 🛒 Frontend Mentor - E-commerce Product Page Solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the E-commerce product page coding challenge](./preview.png)
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is my solution to the [Frontend Mentor E-commerce product page challenge](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).  
+The goal was to build a responsive, interactive product page that matches the provided design as closely as possible.
 
-## React Compiler
+### 🔗 Live Demo
+[View Live Site](https://ecommerce-product-page-main-psi-two.vercel.app)  
+[Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/your-solution-link)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive layout** for mobile, tablet, and desktop
+- **Dark mode toggle** with smooth transitions
+- **Lightbox gallery** for product images
+- **Thumbnail switching** for main product image
+- **Cart functionality** (add, remove, view items)
+- **Hover states** for all interactive elements
+- **Pixel-perfect UI** with Tailwind CSS utilities
+
+---
+
+## 🛠️ Built With
+
+- **React + Vite** ⚛️
+- **Tailwind CSS** 🎨 for utility-first styling
+- **CSS Variables** for theme colors
+- **LocalStorage** to persist dark mode preference
+- **Custom animations** with Tailwind keyframes
+
+---
+
+## 📚 What I Learned
+
+- How to implement **dark mode** using Tailwind’s `darkMode: 'class'` strategy and persist it with React state + `localStorage`.
+- Creating **smooth mount animations** with Tailwind custom keyframes.
+- Handling **image galleries** with lightbox functionality and thumbnail switching.
+- Importance of setting explicit `width`/`height` or `aspect-ratio` on images to prevent layout shifts.
+- Structuring a React project for **scalable UI components**.
+
+---
+
+## 🚦 Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/ParthaDey5/ecommerce-product-page-main.git 
+cd ecommerce-product-page
+npm install
+npm run dev

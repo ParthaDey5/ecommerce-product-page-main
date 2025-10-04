@@ -2,7 +2,25 @@
 @config "../tailwind.config.js";
 @import "tailwindcss";
 
+
 @layer base {
+  html {
+    color-scheme: light dark; /* declare support */
+    forced-color-adjust: none; /* prevent auto inversion */
+  }
+  
+/* globals.css */
+:root {
+  --text-white: #fff;
+  --text-gray: #ccc;
+  --text-lightGray: hsl(223, 64%, 98%);
+}
+[data-theme="dark"] {
+  --text-white: #fff;
+  --text-gray: #ccc;
+  --text-lightGray: hsl(223, 64%, 98%);
+}
+  
   .kumbh400 {
     font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
@@ -11,14 +29,12 @@
     font-variation-settings: "YOPQ" 300;
   }
   
-  nav {
-    @apply border-Light-grayish-blue border-b-[0.2vw];
-  }
+  
   h1 {
     @apply font-bold;
   }
   li {
-    @apply cursor-pointer font-medium text-Grayish-blue hover:text-Dark-grayish-blue relative inline-block after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-[2.7vw] after:h-[0.28vw] after:w-0 after:bg-Orange  
+    @apply cursor-pointer font-medium text-Grayish-blue dark:text-Pale-orange hover:text-Dark-grayish-blue dark:hover:text-gray-200 relative inline-block after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-[2.7vw] after:h-[0.28vw] after:w-0 after:bg-Orange  
     hover:after:w-full after:scale-x-0 
     after:transition-transform after:duration-400 
     after:origin-center hover:after:scale-x-100
@@ -32,7 +48,7 @@
       font-size: calc(10px + (58 - 10) * ((100vw - 855px) / 1705));
     }
     .mediumTxt {
-      font-size: calc(9px + (21 - 9) * ((100vw - 855px) / 1705));
+      font-size: calc(11px + (24 - 11) * ((100vw - 855px) / 1705));
     }
     .smallTxt {
       font-size: calc(10px + (22 - 10) * ((100vw - 855px) / 1705));
@@ -43,8 +59,14 @@
     .ultrasmallTxt {
       font-size: calc(8px + (20 - 8) * ((100vw - 855px) / 1705));
     }
+    .checkoutTxt {
+      font-size: calc(9.5px + (21.5 - 9.5) * ((100vw - 855px) / 1705));
+    }
     .ultrasmallerTxt {
       font-size: calc(8px + (20 - 8) * ((100vw - 855px) / 1705));
+    }
+    .ultrasmallestTxt {
+      font-size: calc(7px + (19 - 7) * ((100vw - 855px) / 1705));
     }
   }
 
@@ -67,7 +89,13 @@
     .ultrasmallTxt {
       font-size: calc(1px + (24 - 1) * ((100vw - 0px) / 854));
     }
+    .checkoutTxt {
+      font-size: calc(1px + (26 - 1) * ((100vw - 0px) / 854));
+    }
     .ultrasmallerTxt {
+      font-size: calc(0.5px + (19 - 0.5) * ((100vw - 0px) / 854));
+    }
+    .ultrasmallestTxt {
       font-size: calc(0.5px + (19 - 0.5) * ((100vw - 0px) / 854));
     }
   }
