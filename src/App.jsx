@@ -84,7 +84,7 @@ function App() {
       <section className="fixed desktop:bottom-[0.7vw] bottom-[3vw] desktop:right-[1.5vw] right-[3vw]">
         <ThemeToggleBtn {...{ darkMode, setDarkMode }} />
       </section>
-      <nav className="border-Light-grayish-blue dark:border-Grayish-blue border-b-[0.15vw] desktop:w-[70%] desktop:h-[7vw] w-full h-[15vw] flex items-center justify-between desktop:px-0 px-[5vw]">
+      <nav className="border-Light-grayish-blue dark:border-gray-400 border-b-[0.15vw] desktop:w-[70%] desktop:h-[7vw] w-full h-[15vw] flex items-center justify-between desktop:px-0 px-[5vw]">
         <span className="h-fit flex items-center">
           <Menu
             onClick={() => setOpenMenu(true)}
@@ -153,7 +153,7 @@ function App() {
                 <p className=" font-bold mediumTxt desktop:p-[1.5vw] p-[5vw]">
                   Cart
                 </p>
-                <div className="w-full desktop:h-[0.15vw] h-[0.8vw] bg-Light-grayish-blue dark:bg-Grayish-blue"></div>
+                <div className="w-full desktop:h-[0.15vw] h-[0.8vw] bg-Light-grayish-blue dark:bg-gray-400"></div>
                 <div className=" desktop:p-[1.5vw] p-[5vw] flex items-center desktop:gap-[1.5vw] gap-[6vw] desktop:mt-0 mt-[1.5vw]">
                   <img
                     src="/images/image-product-1-thumbnail.jpg"
@@ -200,7 +200,7 @@ function App() {
               <p className="font-bold mediumTxt desktop:p-[1.5vw] p-[5vw]">
                 Cart
               </p>
-              <div className="w-full desktop:h-[0.15vw] h-[0.8vw] bg-Light-grayish-blue dark:bg-Grayish-blue"></div>
+              <div className="w-full desktop:h-[0.15vw] h-[0.8vw] bg-Light-grayish-blue dark:bg-gray-400"></div>
               <div className=" w-full desktop:h-[12vw] h-[48vw] flex items-center justify-center">
                 <p className="desktop:tracking-[0.03vw] font-bold mediumTxt">
                   Your cart is empty

@@ -9,7 +9,7 @@ The goal was to build a responsive, interactive product page that matches the pr
 
 ### 🔗 Live Demo
 [View Live Site](https://ecommerce-product-page-main-psi-two.vercel.app)  
-[Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/your-solution-link)
+[Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/ecommerce-product-page-react-tailwind-dark-mode-and-lightbox-TvyBBlGPoQ)
 
 ---
 
